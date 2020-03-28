@@ -14,7 +14,7 @@ Bohobot.on('ready', async (event) => {
 
 Bohobot.on('message', (message, userID) => {
   if (message.content.includes('velho')) {
-    console.log(`BOHOMOL WAS TRIGGERED at ${Date.now()}`)
+    console.log(`BOHOMOL WAS TRIGGERED at ${new Date().toISOString()}`)
     message.reply(velhoteMessageGenerator())
   }
 })
