@@ -4,5 +4,10 @@ module.exports = [
   'SUA MÃE.',
   'MEU PAU.',
   'SECAAAAAAAAAAAAAAASSSSO.',
-  'AAAH NÃO MEEEU...'
+  'AAAH NÃO MEEEU...',
+  'FODASSE!!',
+  'PREGS',
+  'ACHO QUE NÃO, SEI LÁ, PREGUIÇA',
+  'NEM SEI ONDE EU TO MAIS...',
+  'USA EXANA POX'
 ]
