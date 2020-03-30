@@ -1,5 +1,9 @@
 const config = require('./auth')
 const Discord = require('discord.js')
+const Giphy = require('giphy-api')('N7m01C7R9QFDIuc1WzloHpk4sj5Hd9vo')
+
+const { promisify } = require('util')
+Giphy.random = promisify(Giphy.random)
 
 // Basta adicionar as clássicas velhotadas para esse array
 var VELHOTADAS = require('./VELHOTADAS')
@@ -14,13 +18,16 @@ Bohobot.on('ready', async (event) => {
   channel.join()
 })
 
-Bohobot.on('message', (message, userID) => {
+Bohobot.on('message', async (message, userID) => {
   if (onTrivia || message.content.includes('!trivia')) {
     if (message.author.id !== '693471460307501067') {
       triviaLoop(message)
     }
   } else if (message.content.includes('velho')) {
     message.reply(velhoteMessageGenerator())
+  } else if (message.content.includes('!gif')) {
+    const gif = await Giphy.random('funny cat')
+    message.reply(gif.data.embed_url)
   }
 })
 
