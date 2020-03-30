@@ -3,5 +3,6 @@ module.exports = [
   'TEU CU.',
   'SUA MÃE.',
   'MEU PAU.',
-  'SECAAAAAAAAAAAAAAASSSSO.'
+  'SECAAAAAAAAAAAAAAASSSSO.',
+  'AAAH NÃO MEEEU...'
 ]
