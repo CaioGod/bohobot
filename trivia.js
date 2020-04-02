@@ -9,8 +9,6 @@ module.exports = [
     Q: 'Qual era o nome do Bedeu Careca?',
     A: 'Eurico'
   }, {
-
-  }, {
     Q: 'Quem fundou o Colégio Rainha da Paz',
     A: 'Irmãs Dominicanas'
   }, {

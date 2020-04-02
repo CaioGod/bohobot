@@ -14,6 +14,8 @@ var triviaQuestion = -1
 
 Bohobot.on('ready', async (event) => {
   console.log(`Name: ${Bohobot.user.username} and ID: ${Bohobot.user.id}`)
+  const general = await Bohobot.channels.cache.get('238835694779367424')
+  general.send('CHEGUEI DO PLANTÃO NEGADA BORA TIBIA!!!')
   const channel = await Bohobot.channels.fetch(config.recChannel)
   channel.join()
 })
